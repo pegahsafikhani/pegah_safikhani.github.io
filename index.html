@@ -1,10 +1,269 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en">
 <head>
-    <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI & HPC Research Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }body {
+  font-family: 'Inter', sans-serif;
+  background: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #38bdf8;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #94a3b8;
+  max-width: 700px;
+}
+
+.buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-primary:hover {
+  background: #0ea5e9;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-secondary:hover {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+section {
+  padding: 5rem 10%;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: #38bdf8;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill {
+  background: #0f172a;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card h3 {
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #94a3b8;
+  border-top: 1px solid #1e293b;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 4rem 7%;
+  }
+}
+
+  </style>
 </head>
-<body>
-    <h1>Hello World!</h1>
-    <p>This is my first GitHub page.</p>
-</body>
+<body>  <header>
+    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=500&auto=format&fit=crop" alt="Profile" class="profile"><h1>Pegah Safikhani Mohammed Zadeh</h1>
+
+<p class="subtitle">
+  AI & High Performance Computing Researcher | Future PhD Candidate | Passionate about Machine Learning, Parallel Computing, Scientific AI, and Advanced Research in Europe.
+</p>
+
+<div class="buttons">
+  <a href="#projects" class="btn btn-primary">View Projects</a>
+  <a href="#" class="btn btn-secondary">Download CV</a>
+</div>
+
+  </header>  <section>
+    <h2 class="section-title">About Me</h2><div class="about">
+  <div class="card">
+    <p>
+      I am passionate about Artificial Intelligence, High Performance Computing (HPC), and scientific research. My goal is to pursue a PhD in Europe focused on scalable AI systems, distributed computing, and machine learning optimization.
+    </p>
+  </div>
+
+  <div class="card">
+    <div class="skills">
+      <div class="skill">Python</div>
+      <div class="skill">Machine Learning</div>
+      <div class="skill">Deep Learning</div>
+      <div class="skill">HPC</div>
+      <div class="skill">Linux</div>
+      <div class="skill">GitHub</div>
+      <div class="skill">Parallel Computing</div>
+      <div class="skill">PyTorch</div>
+    </div>
+  </div>
+</div>
+
+  </section>  <section id="projects">
+    <h2 class="section-title">Projects</h2><div class="projects">
+
+  <div class="card project-card">
+    <h3>AI Research Project</h3>
+    <p>
+      Built and trained deep learning models for classification and prediction tasks using Python and PyTorch.
+    </p>
+    <a class="project-link" href="#">GitHub Repository →</a>
+  </div>
+
+  <div class="card project-card">
+    <h3>Parallel Computing Simulation</h3>
+    <p>
+      Implemented distributed algorithms and performance optimization techniques for HPC environments.
+    </p>
+    <a class="project-link" href="#">GitHub Repository →</a>
+  </div>
+
+  <div class="card project-card">
+    <h3>Data Science Dashboard</h3>
+    <p>
+      Designed an interactive analytics dashboard for large-scale datasets and visualization.
+    </p>
+    <a class="project-link" href="#">GitHub Repository →</a>
+  </div>
+
+</div>
+
+  </section>  <section>
+    <h2 class="section-title">Research Interests</h2><div class="projects">
+  <div class="card">
+    <h3>Machine Learning Systems</h3>
+    <p>Optimization of large-scale AI training systems and model efficiency.</p>
+  </div>
+
+  <div class="card">
+    <h3>High Performance Computing</h3>
+    <p>Distributed systems, GPU computing, and scalable architectures.</p>
+  </div>
+
+  <div class="card">
+    <h3>Scientific AI</h3>
+    <p>Combining AI with computational science and engineering problems.</p>
+  </div>
+</div>
+
+  </section>  <section>
+    <h2 class="section-title">Contact</h2><div class="card">
+  <p>Email: pegah_safikhani@yahoo.com</p>
+  <p>GitHub: pegah_safikhani.github.io</p>
+  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+</div>
+
+  </section>  <footer>
+    <p>© 2026 Pegah Safikhani Mohammed Zadeh — AI & HPC Portfolio</p>
+  </footer></body>
 </html>
