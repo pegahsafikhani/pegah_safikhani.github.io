@@ -2,19 +2,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI & HPC Research Portfolio</title>
+  <title>Cybersecurity & Networking Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }body {
+    * { margin: 0; padding: 0; box-sizing: border-box; }body {
   font-family: 'Inter', sans-serif;
-  background: #0f172a;
-  color: #f8fafc;
+  background: #0b1220;
+  color: #e2e8f0;
   line-height: 1.6;
 }
 
@@ -26,244 +22,155 @@ header {
   align-items: center;
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #0f172a, #1e293b, #111827);
+  background: linear-gradient(135deg, #0b1220, #111827, #0f172a);
 }
 
 .profile {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 4px solid #38bdf8;
+  border: 3px solid #22c55e;
   margin-bottom: 1.5rem;
   object-fit: cover;
-  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 0 25px rgba(34,197,94,0.4);
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+h1 { font-size: 3rem; margin-bottom: 1rem; }
 
 .subtitle {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #94a3b8;
-  max-width: 700px;
+  max-width: 800px;
 }
 
-.buttons {
-  margin-top: 2rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+.buttons { margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; }
 
 .btn {
-  padding: 0.9rem 1.8rem;
-  border-radius: 12px;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
-.btn-primary {
-  background: #38bdf8;
-  color: #0f172a;
-}
+.btn-primary { background: #22c55e; color: #0b1220; }
+.btn-primary:hover { background: #16a34a; }
 
-.btn-primary:hover {
-  background: #0ea5e9;
-  transform: translateY(-3px);
-}
+.btn-secondary { border: 1px solid #22c55e; color: #22c55e; }
+.btn-secondary:hover { background: #22c55e; color: #0b1220; }
 
-.btn-secondary {
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-}
+section { padding: 4rem 10%; }
 
-.btn-secondary:hover {
-  background: #38bdf8;
-  color: #0f172a;
-}
+.section-title { font-size: 2rem; color: #22c55e; margin-bottom: 2rem; }
 
-section {
-  padding: 5rem 10%;
-}
-
-.section-title {
-  font-size: 2.2rem;
-  margin-bottom: 2rem;
-  color: #38bdf8;
-}
-
-.about {
+.grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
-  background: #1e293b;
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  background: #111827;
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid #1f2937;
 }
 
 .skill {
-  background: #0f172a;
-  border: 1px solid #38bdf8;
-  color: #38bdf8;
-  padding: 0.7rem 1rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-}
-
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.project-card h3 {
-  margin-bottom: 1rem;
-  color: #f8fafc;
-}
-
-.project-card p {
-  color: #cbd5e1;
-  margin-bottom: 1rem;
-}
-
-.project-link {
-  color: #38bdf8;
-  text-decoration: none;
-  font-weight: 600;
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  border: 1px solid #22c55e;
+  border-radius: 20px;
+  color: #22c55e;
+  font-size: 0.9rem;
 }
 
 footer {
   text-align: center;
   padding: 2rem;
-  color: #94a3b8;
-  border-top: 1px solid #1e293b;
-}
-
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
-
-  section {
-    padding: 4rem 7%;
-  }
+  color: #64748b;
 }
 
   </style>
 </head>
-<body>  <header>
-    <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=500&auto=format&fit=crop" alt="Profile" class="profile"><h1>Pegah Safikhani Mohammed Zadeh</h1>
-
-<p class="subtitle">
-  AI & High Performance Computing Researcher | Future PhD Candidate | Passionate about Machine Learning, Parallel Computing, Scientific AI, and Advanced Research in Europe.
-</p>
-
-<div class="buttons">
-  <a href="#projects" class="btn btn-primary">View Projects</a>
-  <a href="#" class="btn btn-secondary">Download CV</a>
+<body><header>
+  <img class="profile" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="profile">  <h1>Pegah Safikhani</h1>  <p class="subtitle">
+    Cybersecurity & Computer Networks Enthusiast | Future PhD Candidate in Europe | Interested in Network Security, Ethical Hacking, Secure Communications, and Distributed Systems.
+  </p>  <div class="buttons">
+    <a class="btn btn-primary" href="#projects">View Projects</a>
+    <a class="btn btn-secondary" href="#roadmap">PhD Roadmap</a>
+  </div>
+</header><section>
+  <h2 class="section-title">About Me</h2>
+  <div class="card">
+    I am passionate about Computer Networks, Cybersecurity, and secure communication systems. My goal is to pursue a PhD in Europe focusing on network security, intrusion detection systems, and resilient distributed networks.
+  </div>
+</section><section>
+  <h2 class="section-title">Skills</h2>
+  <div class="card">
+    <span class="skill">Computer Networks</span>
+    <span class="skill">Cybersecurity</span>
+    <span class="skill">Network Security</span>
+    <span class="skill">Linux</span>
+    <span class="skill">Python</span>
+    <span class="skill">Wireshark</span>
+    <span class="skill">Cisco Networking</span>
+    <span class="skill">Penetration Testing</span>
+  </div>
+</section><section id="projects">
+  <h2 class="section-title">Projects</h2>
+  <div class="grid"><div class="card">
+  <h3>Packet Sniffer Tool</h3>
+  <p>Python-based tool for capturing and analyzing network packets in real time.</p>
 </div>
 
-  </header>  <section>
-    <h2 class="section-title">About Me</h2><div class="about">
-  <div class="card">
-    <p>
-      I am passionate about Artificial Intelligence, High Performance Computing (HPC), and scientific research. My goal is to pursue a PhD in Europe focused on scalable AI systems, distributed computing, and machine learning optimization.
-    </p>
-  </div>
-
-  <div class="card">
-    <div class="skills">
-      <div class="skill">Python</div>
-      <div class="skill">Machine Learning</div>
-      <div class="skill">Deep Learning</div>
-      <div class="skill">HPC</div>
-      <div class="skill">Linux</div>
-      <div class="skill">GitHub</div>
-      <div class="skill">Parallel Computing</div>
-      <div class="skill">PyTorch</div>
-    </div>
-  </div>
+<div class="card">
+  <h3>Port Scanner</h3>
+  <p>Simple network scanner for detecting open ports and vulnerabilities.</p>
 </div>
 
-  </section>  <section id="projects">
-    <h2 class="section-title">Projects</h2><div class="projects">
-
-  <div class="card project-card">
-    <h3>AI Research Project</h3>
-    <p>
-      Built and trained deep learning models for classification and prediction tasks using Python and PyTorch.
-    </p>
-    <a class="project-link" href="#">GitHub Repository →</a>
-  </div>
-
-  <div class="card project-card">
-    <h3>Parallel Computing Simulation</h3>
-    <p>
-      Implemented distributed algorithms and performance optimization techniques for HPC environments.
-    </p>
-    <a class="project-link" href="#">GitHub Repository →</a>
-  </div>
-
-  <div class="card project-card">
-    <h3>Data Science Dashboard</h3>
-    <p>
-      Designed an interactive analytics dashboard for large-scale datasets and visualization.
-    </p>
-    <a class="project-link" href="#">GitHub Repository →</a>
-  </div>
-
+<div class="card">
+  <h3>Password Strength Checker</h3>
+  <p>Security tool to evaluate password strength using entropy analysis.</p>
 </div>
 
-  </section>  <section>
-    <h2 class="section-title">Research Interests</h2><div class="projects">
-  <div class="card">
-    <h3>Machine Learning Systems</h3>
-    <p>Optimization of large-scale AI training systems and model efficiency.</p>
   </div>
-
-  <div class="card">
-    <h3>High Performance Computing</h3>
-    <p>Distributed systems, GPU computing, and scalable architectures.</p>
-  </div>
-
-  <div class="card">
-    <h3>Scientific AI</h3>
-    <p>Combining AI with computational science and engineering problems.</p>
-  </div>
+</section><section id="roadmap">
+  <h2 class="section-title">Cybersecurity PhD Roadmap (Europe)</h2>
+  <div class="grid"><div class="card">
+  <h3>Phase 1: Foundations</h3>
+  <p>Learn Networking fundamentals, TCP/IP, Linux, and Python scripting.</p>
 </div>
 
-  </section>  <section>
-    <h2 class="section-title">Contact</h2><div class="card">
-  <p>Email: pegah_safikhani@yahoo.com</p>
-  <p>GitHub: pegah_safikhani.github.io</p>
-  <p>LinkedIn: linkedin.com/in/yourprofile</p>
+<div class="card">
+  <h3>Phase 2: Security Basics</h3>
+  <p>Study cryptography, network security, firewalls, and intrusion detection systems.</p>
 </div>
 
-  </section>  <footer>
-    <p>© 2026 Pegah Safikhani Mohammed Zadeh — AI & HPC Portfolio</p>
-  </footer></body>
+<div class="card">
+  <h3>Phase 3: Practical Skills</h3>
+  <p>Practice penetration testing, Wireshark analysis, and vulnerability scanning tools.</p>
+</div>
+
+<div class="card">
+  <h3>Phase 4: Research Preparation</h3>
+  <p>Read academic papers, contact professors, and build research-oriented projects.</p>
+</div>
+
+<div class="card">
+  <h3>Phase 5: PhD Applications</h3>
+  <p>Prepare CV, SOP, GitHub portfolio, and apply to European universities.</p>
+</div>
+
+  </div>
+</section><section>
+  <h2 class="section-title">Contact</h2>
+  <div class="card">
+    <p>Email: pegah_safikhani@yahoo.com</p>
+    <p>GitHub: pegah_safikhani.github.io</p>
+  </div>
+</section><footer>
+  © 2026 Pegah Safikhani — Cybersecurity & Networking Portfolio
+</footer></body>
 </html>
